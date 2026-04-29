@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ====== TEMA GERAL ====== */
+body {
+  @apply bg-[#0E0C0A] text-[#EADCC8];
+}
+
+/* ====== ESTILOS DO PARALLAX ====== */
+.code-mask {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+.code-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.code-soft {
+  color: rgba(200, 169, 126, 0.22);
+}
+
+.code-soft-2 {
+  color: rgba(234, 220, 200, 0.12);
+}
+
+/* ====== ANIMAÇÕES DO PARALLAX ====== */
+@keyframes fall {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.fall-slow {
+  animation: fall 28s linear infinite;
+}
+
+.fall-mid {
+  animation: fall 18s linear infinite;
+}
+
+.fall-fast {
+  animation: fall 10s linear infinite;
+}
+
+/* ====== ANIMAÇÕES GERAIS ====== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* ====== CLASSES UTILITÁRIAS ====== */
+.animate-fadeIn {
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+.animate-fadeSlide {
+  opacity: 0;
+  animation: fadeSlide 1s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Atrasos de animação */
+.delay-\[200ms\] { animation-delay: 0.2s; }
+.delay-\[400ms\] { animation-delay: 0.4s; }
+.delay-\[600ms\] { animation-delay: 0.6s; }
+.delay-\[800ms\] { animation-delay: 0.8s; }
+
+/* === ENTRADAS BONITAS === */
+@keyframes fadeIn { from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:none} }
+@keyframes fadeSlide { from{opacity:0; transform:translateY(10px)} to{opacity:1; transform:none} }
+@keyframes float { 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-6px) } }
+
+/* === CÓDIGOS CAINDO === */
+@keyframes fall { 0%{ transform: translateY(-100%) } 100%{ transform: translateY(100%) } }
+.fall-slow { animation: fall 28s linear infinite; }
+.fall-mid  { animation: fall 18s linear infinite; }
+.fall-fast { animation: fall 12s linear infinite; }
+
+/* Helpers */
+.animate-fadeIn   { animation: fadeIn .7s ease-out both; }
+.animate-fadeSlide{ animation: fadeSlide .7s ease-out both; }
+.animate-float    { animation: float 6s ease-in-out infinite; }
+
+/* Parallax text style */
+.code-mask{
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+.code-mono{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+.code-soft   { color: rgba(200,169,126,0.14); }
+.code-soft-2 { color: rgba(234,220,200,0.08); }
+
+/* === ANIMAÇÕES BASE === */
+@keyframes fall { 0%{ transform: translateY(-100%) } 100%{ transform: translateY(100%) } }
+@keyframes fadeIn { from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:none} }
+@keyframes fadeSlide { from{opacity:0; transform:translateY(10px)} to{opacity:1; transform:none} }
+@keyframes float { 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-6px) } }
+
+.fall-slow { animation: fall 28s linear infinite; }
+.fall-mid  { animation: fall 18s linear infinite; }
+.fall-fast { animation: fall 12s linear infinite; }
+
+.animate-fadeIn    { animation: fadeIn .7s ease-out both; }
+.animate-fadeSlide { animation: fadeSlide .7s ease-out both; }
+.animate-float     { animation: float 6s ease-in-out infinite; }
+
+/* ====== ESTILOS DO PARALLAX ===== */
+.code-mask {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+.code-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+/* duas intensidades  */
+.code-soft   { color: rgba(234,220,200,0.12); }
+.code-soft-2 { color: rgba(200,169,126,0.16); }
