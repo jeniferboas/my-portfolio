@@ -9,11 +9,31 @@ export default function Projects() {
 
   const meusProjetos = [
     {
+      title: "Orquestração Kubernetes & CI/CD",
+      desc: "Implantação de API Node.js utilizando Azure Pipelines, Docker e Azure Container Registry (ACR). Orquestração em cluster Kubernetes (AKS) via YAML, resolvendo desafios de rede e segurança com Kubernetes Secrets.",
+      tags: ["Node.js", "Docker", "Kubernetes (AKS)", "CI/CD"],
+      repo: "https://github.com/jeniferboas/azure-kubernetes-cicd-api", 
+      link: "https://api-jenifer-devops-cqf6fkenesdmavgj.canadacentral-01.azurewebsites.net",
+      status: "Concluído",
+      icon: <Code2 size={24} />,
+      isGitLab: false
+    },
+    {
+      title: "Pipeline de IA para Propostas ESG",
+      desc: "Automação serverless com Azure Logic Apps e Webhooks para propostas ESG. Integração com Azure OpenAI (GPT-4) via Prompt Engineering e arquitetura resiliente com troubleshooting de logs contra limitações de cota.",
+      tags: ["Azure", "Logic Apps", "OpenAI GPT-4", "Serverless"],
+      repo: "https://github.com/jeniferboas/pipeline-ia-propostas-esg",
+      status: "Concluído",
+      icon: <Cloud size={24} />,
+      isGitLab: false
+    },
+    {
+      
       title: "Pipeline CI/CD & Monitoramento Cloud",
       desc: "Implementação de fluxo completo de CI/CD via YAML no Azure DevOps. Configuração de Self-Hosted Agents e deploy automatizado em Azure App Service.",
       tags: ["Azure DevOps", "Python", "YAML", "Cloud"],
-      repo: "https://github.com/jenifervbs", 
-      link: "https://api-jenifer-devops-cqf6fkenesdmavgj.canadacentral-01.azurewebsites.net",
+      repo: "https://github.com/jeniferboas/pipeline-flask-azure-devops", 
+      link: "https://dev.azure.com/jenifervbs/Devops101_scrum/_build/results?buildId=20&view=results",
       status: "Online",
       icon: <Cloud size={24} />,
       isGitLab: false
