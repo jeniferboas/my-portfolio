@@ -13,7 +13,6 @@ export default function Projects() {
       desc: "Implantação de API Node.js utilizando Azure Pipelines, Docker e Azure Container Registry (ACR). Orquestração em cluster Kubernetes (AKS) via YAML, resolvendo desafios de rede e segurança com Kubernetes Secrets.",
       tags: ["Node.js", "Docker", "Kubernetes (AKS)", "CI/CD"],
       repo: "https://github.com/jeniferboas/azure-kubernetes-cicd-api", 
-      link: "https://api-jenifer-devops-cqf6fkenesdmavgj.canadacentral-01.azurewebsites.net",
       status: "Concluído",
       icon: <Code2 size={24} />,
       isGitLab: false
@@ -34,7 +33,7 @@ export default function Projects() {
       tags: ["Azure DevOps", "Python", "YAML", "Cloud"],
       repo: "https://github.com/jeniferboas/pipeline-flask-azure-devops", 
       link: "https://dev.azure.com/jenifervbs/Devops101_scrum/_build/results?buildId=20&view=results",
-      status: "Online",
+      status: "Concluído",
       icon: <Cloud size={24} />,
       isGitLab: false
     },
@@ -58,16 +57,7 @@ export default function Projects() {
       icon: <Code2 size={24} />,
       isGitLab: false
     },
-    {
-      title: "Marmoraria Inovação",
-      desc: "Site institucional focado em UX. Desenvolvido para apresentar portfólio de produtos e serviços com design responsivo.",
-      tags: ["React", "Tailwind CSS", "Vite"],
-      repo: "https://github.com/jeniferboas/marmoraria-inovacao",
-      link: "https://github.com/jeniferboas/marmoraria-inovacao",
-      status: "Em Construção",
-      icon: <Globe size={24} />,
-      isGitLab: false
-    }
+    
   ];
 
   return (
